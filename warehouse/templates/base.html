@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Складський облік{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Складський застосунок</h1>
+        {% include 'partials/menu.html' %}
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Складський застосунок. Усі права захищено.</p>
+    </footer>
+</body>
+</html>

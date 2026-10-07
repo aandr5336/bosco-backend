@@ -1,39 +1,36 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <title>Список товарів</title>
-</head>
-<body>
-    <h1>Каталог товарів на складах</h1>
+{% extends 'base.html' %}
 
-    <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-            <tr>
-                <th>№</th>
-                <th>Назва</th>
-                <th>Бренд</th>
-                <th>Розмір</th>
-                <th>Колір</th>
-                <th>Ціна</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for product in products %}
-            <tr>
-                <td>{{ forloop.counter }}</td>
-                <td>{{ product.name }}</td>
-                <td>{{ product.brand }}</td>
-                <td>{{ product.size }}</td>
-                <td>{{ product.color }}</td>
-                <td>{{ product.price }} грн</td>
-            </tr>
-            {% empty %}
-            <tr>
-                <td colspan="6">Товарів немає</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</body>
-</html>
+{% block title %}Список товарів - Склад{% endblock %}
+
+{% block content %}
+<h2>Каталог товарів на складах</h2>
+
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>№</th>
+            <th>Назва</th>
+            <th>Бренд</th>
+            <th>Розмір</th>
+            <th>Колір</th>
+            <th>Ціна</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in products %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.brand }}</td>
+            <td>{{ product.size }}</td>
+            <td>{{ product.color }}</td>
+            <td>{{ product.price }} грн</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="6">Товарів немає</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
