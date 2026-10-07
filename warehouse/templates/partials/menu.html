@@ -1,4 +1,7 @@
+{% load catalog_extras %}
+
 <nav>
-    <a href="{% url 'product_list' %}">Головна (Список товарів)</a>
+    <a href="{% url 'product_list' %}">Головна (Список товарів)</a> | 
+    <span>Товарів у базі: <strong>{% product_count %}</strong></span>
 </nav>
 <hr>
