@@ -1,0 +1,12 @@
+[
+  {"model": "catalog.product", "pk": 1, "fields": {"name": "Футболка Oversize", "brand": "Nike", "size": "L", "color": "Чорний", "price": "1200.00"}},
+  {"model": "catalog.product", "pk": 2, "fields": {"name": "Худі Basic", "brand": "Adidas", "size": "M", "color": "Сірий", "price": "2500.00"}},
+  {"model": "catalog.product", "pk": 3, "fields": {"name": "Джинси Straight", "brand": "Levi's", "size": "32/34", "color": "Синій", "price": "3800.00"}},
+  {"model": "catalog.product", "pk": 4, "fields": {"name": "Куртка Windbreaker", "brand": "Puma", "size": "XL", "color": "Зелений", "price": "4100.00"}},
+  {"model": "catalog.product", "pk": 5, "fields": {"name": "Сорочка Casual", "brand": "Zara", "size": "M", "color": "Білий", "price": "1800.00"}},
+  {"model": "catalog.product", "pk": 6, "fields": {"name": "Шорти Sport", "brand": "Under Armour", "size": "S", "color": "Темно-синій", "price": "1400.00"}},
+  {"model": "catalog.product", "pk": 7, "fields": {"name": "Светр Knitwear", "brand": "Tommy Hilfiger", "size": "L", "color": "Бежевий", "price": "4900.00"}},
+  {"model": "catalog.product", "pk": 8, "fields": {"name": "Спортивні штани", "brand": "Reebok", "size": "M", "color": "Чорний", "price": "2100.00"}},
+  {"model": "catalog.product", "pk": 9, "fields": {"name": "Жилет Puffer", "brand": "The North Face", "size": "L", "color": "Жовтий", "price": "5600.00"}},
+  {"model": "catalog.product", "pk": 10, "fields": {"name": "Блейзер Classic", "brand": "Massimo Dutti", "size": "L", "color": "Темно-сірий", "price": "6200.00"}}
+]
